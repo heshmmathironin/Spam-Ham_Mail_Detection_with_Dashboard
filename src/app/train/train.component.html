@@ -1,0 +1,24 @@
+
+
+    <div><span class="subheading">
+        UPLOAD Training data in CSV format
+    </span>
+   
+    <form [formGroup]="form" (ngSubmit)="train()" class="cus-form">
+
+        <div class="form-control">
+            <label for="file">Choose file to upload</label>
+            <input type="file" id="file" name="file" 
+            accept=".csv" (change)="onChange($event)">
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn-primary submit">Train Data</button>
+        </div>
+      </form>
+      <div  class="result" *ngIf="result">Total Records Trained: {{result.total_records_trained}}  <br>
+         Score: {{result.score}}
+
+      </div>
+    </div>
+
+ 

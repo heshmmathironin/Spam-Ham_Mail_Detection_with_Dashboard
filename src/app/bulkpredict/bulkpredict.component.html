@@ -1,0 +1,21 @@
+
+    <div><span class="subheading">
+        UPLOAD THE CSV FILE TO BE IDENTIFIED AS SPAM OR HAM...
+    </span>
+   
+    <form [formGroup]="form" (ngSubmit)="bulkpredict()" class="cus-form">
+
+        <div class="form-control">
+            <label for="file">Choose file to upload</label>
+            <input type="file" id="file" name="file" 
+            accept=".csv" (change)="onChange($event)">
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn-primary submit">Predict</button>
+        </div>
+      </form>
+      <div  class="result"></div>
+    </div>
+
+ 
+  

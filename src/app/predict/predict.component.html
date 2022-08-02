@@ -1,0 +1,20 @@
+
+
+
+<div><span class="subheading">
+  ENTER THE SAMPLE EMAIL TO CHECK WHETHER THE MAIL IS SPAM OR HAM
+</span>
+<div>
+  <label for="Mail_is">Paste Mail Content To Predict</label>
+  <input type="text" id="Mail_is" name="Mail_is" [(ngModel)]="inputText"><br><br>
+ 
+  <input type="button" class='btn-primary' value="Predict Spam/Ham" (click)='predict()'><br><br>
+
+  <div  class="result" *ngIf="predicted_result">
+  The Given mail content is::<span id="result" for="Mail_is">{{predicted_result}}</span>
+  </div>
+</div>
+
+
+
+

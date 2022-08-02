@@ -1,0 +1,21 @@
+  <div class="header">
+      <span class="title">Unsolicited Mail Detection</span>
+  </div>
+  <div class="spancontainer">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-train-tab" data-bs-toggle="pill" data-bs-target="#pills-train" type="button" role="tab" aria-controls="pills-train" aria-selected="true">Train</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-predict-tab" data-bs-toggle="pill" data-bs-target="#pills-predict" type="button" role="tab" aria-controls="pills-predict" aria-selected="false">Predict</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-bulkpredict-tab" data-bs-toggle="pill" data-bs-target="#pills-bulkpredict" type="button" role="tab" aria-controls="pills-bulkpredict" aria-selected="false">Bulk Predict</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-train" role="tabpanel" aria-labelledby="pills-train-tab"><app-train></app-train></div>
+  <div class="tab-pane fade" id="pills-predict" role="tabpanel" aria-labelledby="pills-predict-tab"><app-predict></app-predict></div>
+  <div class="tab-pane fade" id="pills-bulkpredict" role="tabpanel" aria-labelledby="pills-bulkpredict-tab"><app-bulkpredict></app-bulkpredict></div>
+</div>
+</div>
